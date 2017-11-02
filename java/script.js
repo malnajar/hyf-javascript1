@@ -1,14 +1,14 @@
 //1st Assignment
 
-let English = '"Hello World!"';
+var English = '"Hello World!"';
 console.log(English);
 alert(English);
 
-let Arabic = '"!اهلا و سهلا"';
+var Arabic = '"!اهلا و سهلا"';
 console.log(Arabic);
 alert(Arabic);
 
-let Dutch ='"Ohi Wereld!"';
+var Dutch = '"Ohi Wereld!"';
 console.log(Dutch);
 alert(Dutch);
 
@@ -19,7 +19,7 @@ alert("I'm awesome");
 
 //3rd Assignment
 
-let x;
+var x;
 console.log("The value of x will be: Undefined");
 alert("The value of x will be: Undefined");
 alert(console.log(x));
@@ -31,23 +31,23 @@ alert("The value of x will be =" + x);
 
 //4th Assignment
 
-let y = "black";
+var y = ("black");
 console.log("The value of y is =" + y);
 alert("The value of y is =" + y);
 
 
-y = "white";
+var y = ("white");
 console.log("The value of y is =" + y);
 alert("And now the value of y is =" + y);
 
 
 //5th Assignment
 
-let z = 7.25;
+var z = 7.25;
 console.log(z);
 alert(z);
 
-let a = Math.floor(z);
+var a = Math.floor(z);
 console.log(a);
 alert(a);
 
@@ -57,14 +57,14 @@ if (a > z) {
     alert("The highest value of a= " + c);
     
 } else {
-    let c = z;
+    var c = z;
     console.log("The highest value of z= " + c);
     alert("The highest value of z= " + c);
 }
 
 //6th Assignment
 
-let Animals = [];
+var Animals = [];
 console.log("the value of the array is = Empty");
 alert("the value of the array is = Empty");
 console.log(Animals);
@@ -79,7 +79,7 @@ alert(Animals);
 
 //7th Assignment
 
-let myString = "this,is,a,test";
+var myString = "this,is,a,test";
 console.log(myString);
 alert(myString);
 console.log(myString.length);
@@ -87,28 +87,28 @@ alert("the length of my strings is =" + myString.length);
 
 //8th Assignment
 
-let first = "s";
+var first = "s";
 console.log("The value of my first variable is: " + first);
 alert("The value of my first variable is: " + first);
 console.log(typeof first);
 alert("and the type of my first variable is :" + typeof first);
 
 
-let second = 1;
+var second = 1;
 console.log("The value of my second variable is: " + second);
 alert("The value of my second variable is: " + second);
 console.log(typeof second);
 alert("and the type of my second variable is: " + typeof second);
 
 
-let third = false;
+var third = false;
 console.log("The value of my third variable is: " + third);
 alert("The value of my third variable is: " + third);
 console.log(typeof third);
 alert("and the type of my third variable is: " + typeof third);
 
 
-let fourth = ["A", "B", "C"];
+var fourth = ["A", "B", "C"];
 console.log("The value of my fourth variable is:" + fourth)
 alert("The value of my fourth variable is:" + fourth);
 console.log(typeof fourth);
@@ -136,7 +136,7 @@ if (typeof first === typeof second || typeof first === typeof third || typeof fi
 
 //9th Assignment
 
-let x = 7;
+var x = 7;
 console.log(x);
 alert(x);
 
@@ -152,7 +152,7 @@ alert("The new value of x is the result of 7 is divided by 3");
 
 //10th Assignment
 
-let array = ["a", 7, true];
+var array = ["a", 7, true];
 
 console.log("The value of my array are: " + array);
 alert("The value of my array are: " + array);
