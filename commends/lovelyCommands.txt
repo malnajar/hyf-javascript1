@@ -1,1 +1,0 @@
-dog hamster ls pwd
