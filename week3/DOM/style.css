@@ -1,0 +1,158 @@
+body {
+  background-color: #f0f0f0;
+  text-align: center;
+  font-family: 'Spectral SC', serif;
+  height: 2100px;
+  margin: 0px;
+  padding: 0px;
+
+  
+}
+
+.nav {
+  height: 70px;
+  text-align: left;
+  box-shadow: 1px 1px 10px #2c2c2c;
+  position: relative;
+  background-image:  url(http://www.personal.psu.edu/users/j/r/jrp5578/first/web-page-background-image-hd-wallpapers-res-wallpaper-website-respage-icon-google-page-design-templates-blank-free-create-home-make-your-yahoo-websites-background-image-hd-wallpapers.jpg);
+
+}
+
+.subjectNav{
+  float: left;
+}
+
+.searchDiv{
+  float: left;
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  width: 70%;
+}
+
+.logDiv{
+
+  float: right;
+}
+
+.sub {
+
+  text-shadow: 1px 1px 5px #2c2c2c;
+  color: whitesmoke;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.searchIn {
+  float: left;
+  height: 20px;
+  position: relative;
+  top: 20px;
+}
+
+.searchBut {
+  float: left;
+  position: relative;
+  top: 20px;
+  height: 27px;
+  background-color: rgb(65, 65, 65);
+  border: 1px solid black;
+  color: whitesmoke;
+}
+
+.buttons {
+  font-family: 'Spectral SC', serif;
+  float: left;
+  height: 70px;
+  width: 100px;
+  background-color: rgb(65, 65, 65);
+  border: 1px solid black;
+  box-shadow: -1px -1px -10px #2c2c2c;
+  color: whitesmoke;
+}
+
+#main {
+  height: 1000px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#unitList{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.listItems{
+  box-shadow: -1px -1px 10px #2c2c2c;
+  width: 260px;
+  height: 600px;
+  padding: 20px;
+}
+
+img {
+  
+  height: 378px;
+  width: 258px; 
+  border-radius: 3px 10px 10px; 
+  margin: 0px;
+  padding: 0px;
+}
+
+#bookUnitList {
+  
+  
+  margin: 0px;
+  padding: 0px;
+  width: 260px;
+  height: 600px;
+}
+
+li {
+  list-style: none;
+}
+
+#bookUnitList li {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bookTitle {
+  
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.bookInfo {
+  position: relative;
+  top: 45px;
+  padding-top: 5px;
+  text-align: left;
+}
+
+#theLordOfTheRings_TheHobbit ul .bookInfo,
+#theLordOfTheRings_TheFellowshipOfTheRing ul .bookInfo,
+#theLordOfTheRings_TheTwoTowers ul .bookInfo,
+#theLordOfTheRings_TheReturnOfTheKing ul .bookInfo {
+  top: 25px;
+
+}
+
+.InfoBut{
+  position: relative;
+  top: 80px;
+}
+
+#theLordOfTheRings_TheHobbit ul li .InfoBut,
+#theLordOfTheRings_TheFellowshipOfTheRing ul li .InfoBut,
+#theLordOfTheRings_TheTwoTowers ul li .InfoBut,
+#theLordOfTheRings_TheReturnOfTheKing ul li .InfoBut {
+top: 55px;
+}
