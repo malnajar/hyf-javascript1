@@ -11,8 +11,8 @@ let numbers = [1, 2, 3, 4];
 
 // console.log("The doubled numbers are", newNumbers); // [2, 6]
 
-let newNumbers = numbers.filter(n => n % 2 !== 0)
-newNumbers = newNumbers.map(m => m * 2)
+let newNumber = numbers.filter(n => n % 2 !== 0)
+let newNumbers = newNumber.map(m => m * 2)
 console.log(newNumbers)
 
 
@@ -67,7 +67,7 @@ let tasks = monday.concat(tuesday);
 
 let worthOfTasks = 0
     
-tasks.map(collect => {
+tasks.forEach(collect => {
 
     
     worthOfTasks += collect.duration
@@ -80,19 +80,14 @@ console.log("Request #1", worthOfTasks)
 
 //Request #2
 
-tasks.map(convert => 
-{
+let taskDurationsToHours = tasks.map(convert => convert.duration / 60 )
 
-    return convert.duration /= 60
-    
-})
-
-console.log("Request #2", tasks)
+console.log("Request #2", taskDurationsToHours)
 
 //Request #3
 
-let lessThenTwoHours = tasks.filter(compare => {
-    return (compare.duration < 2) ? true : false
+let lessThenTwoHours = taskDurationsToHours.filter(compare => {
+    return (compare < 2) ? true : false
 })
 
 console.log("Request #3", lessThenTwoHours)
@@ -103,8 +98,8 @@ console.log("Request #3", lessThenTwoHours)
 let MaartjeBill = 0
 let MaartjeTakePerHour = 18
 
-tasks.map(bill => {
-    MaartjeBill += MaartjeTakePerHour * bill.duration
+taskDurationsToHours.forEach(bill => {
+    MaartjeBill += MaartjeTakePerHour * bill
 })
 
 console.log("Request #4",MaartjeBill,"€")
