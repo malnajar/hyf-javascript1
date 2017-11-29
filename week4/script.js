@@ -66,21 +66,15 @@ let tasks = monday.concat(tuesday);
 // Request #1
 
 let worthOfTasks = 0
-    
-tasks.forEach(collect => {
 
-    
-    worthOfTasks += collect.duration
-   
-
-})
+tasks.forEach(collect => worthOfTasks += collect.duration)
 
 console.log("Request #1", worthOfTasks)
 
 
 //Request #2
 
-let taskDurationsToHours = tasks.map(convert => convert.duration / 60 )
+let taskDurationsToHours = tasks.map(convert => convert.duration / 60)
 
 console.log("Request #2", taskDurationsToHours)
 
@@ -98,8 +92,6 @@ console.log("Request #3", lessThenTwoHours)
 let MaartjeBill = 0
 let MaartjeTakePerHour = 18
 
-taskDurationsToHours.forEach(bill => {
-    MaartjeBill += MaartjeTakePerHour * bill
-})
+taskDurationsToHours.forEach(bill => MaartjeBill += MaartjeTakePerHour * bill)
 
-console.log("Request #4",MaartjeBill,"€")
+console.log("Request #4", MaartjeBill, "€")
