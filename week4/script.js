@@ -74,14 +74,20 @@ console.log("Request #1", worthOfTasks)
 
 //Request #2
 
-let taskDurationsToHours = tasks.map(convert => convert.duration / 60)
+let taskDurationsToHours = tasks.map(convert => {
+    
+    return {
+        name: convert.name,
+        duration: convert.duration / 60
+    };
+})
 
 console.log("Request #2", taskDurationsToHours)
 
 //Request #3
 
 let lessThenTwoHours = taskDurationsToHours.filter(compare => {
-    return (compare < 2) ? true : false
+    return (compare.duration < 2) ? true : false
 })
 
 console.log("Request #3", lessThenTwoHours)
@@ -92,6 +98,6 @@ console.log("Request #3", lessThenTwoHours)
 let MaartjeBill = 0
 let MaartjeTakePerHour = 18
 
-taskDurationsToHours.forEach(bill => MaartjeBill += MaartjeTakePerHour * bill)
+taskDurationsToHours.forEach(bill => MaartjeBill += MaartjeTakePerHour * bill.duration)
 
 console.log("Request #4", MaartjeBill, "€")
